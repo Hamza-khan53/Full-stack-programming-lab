@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Simple To-Do List</h2>
+
+    <div class="task">
+        <input type="text" value="Complete Assignment" id="task1">
+        <button onclick="completeTask(1)">Complete</button>
+        <button onclick="removeTask(1)">Remove</button>
+    </div>
+
+    <div class="task">
+        <input type="text" value="Study JavaScript" id="task2">
+        <button onclick="completeTask(2)">Complete</button>
+        <button onclick="removeTask(2)">Remove</button>
+    </div>
+
+    <div class="task">
+        <input type="text" value="Go for Walk" id="task3">
+        <button onclick="completeTask(3)">Complete</button>
+        <button onclick="removeTask(3)">Remove</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

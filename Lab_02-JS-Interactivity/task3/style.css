@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Card */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Each task - Vertical Layout */
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+/* Input */
+input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4e73df;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+/* Buttons */
+button {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+/* Complete button */
+button:first-of-type {
+    background-color: #1cc88a;
+    color: white;
+}
+
+button:first-of-type:hover {
+    background-color: #17a673;
+}
+
+/* Remove button */
+button:last-of-type {
+    background-color: #afaeae;
+    color: white;
+}
+
+button:last-of-type:hover {
+    background-color: #c4afad;
+}
+
+/* Completed style */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    background-color: #f8f9fc;
+}
